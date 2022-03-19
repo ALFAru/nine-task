@@ -256,7 +256,7 @@ const requestMsg = {
   totalRecords: 75,
 };
 
-describe("Give sample input", () => {
+describe("Give sample input that was provided", () => {
   test("Should recieve sample output", async () => {
     await request(app)
       .post("/")

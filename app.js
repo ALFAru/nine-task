@@ -5,6 +5,7 @@ const filter = require("./api/filter");
 
 app.use(bodyParser.json());
 app.use((err, req, res, next) => {
+  // If status code is 400 - return error object
   if (err.status === 400)
     return res
       .status(err.status)
